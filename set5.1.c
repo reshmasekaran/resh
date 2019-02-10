@@ -2,16 +2,16 @@
 	#include<conio.h>
 	void main()
 	{
-	int i,a,x=0,y=1,fib=1;
+	int i,S,x=0,y=1,f=1;
 	clrscr();
 	printf("enter the values");
-	scanf("%d",&a);
-	for(i=1;i<=a;i++)
+	scanf("%d",&S);
+	for(i=1;i<=S;i++)
 	{
-	 printf("\n%d",fib);
+	 printf("\n%d",f);
 	 fib=x+y;
 	 x=y;
-	 y=fib;
+	 y=f;
 	}
 	getch();
 	}
