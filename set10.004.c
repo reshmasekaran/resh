@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int a[10],b,n,n1,i=0;
+    int s[10],s1,n,n1,i=0;
     scanf("%d %d",&n,&n1);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&s[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]==n1)
+        if(s[i]==n1)
         {
-            b=a[i];
+            s1=a[i];
             printf("%d",b);
         }
     }
