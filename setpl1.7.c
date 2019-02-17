@@ -1,65 +1,26 @@
-#include <stdio.h>
-
-#include<string.h>
-
-int main(void)
-
+#include<stdio.h>
+#include<conio.h>
+void main()
 {
-
-	char string[10];
-
-	int i,temp,n;
-
-	gets(string);
-
-	n=strlen(string);
-
-	if(n%2==0)
-
-	{
-
-		for(i=0;i<n;i+=2)
-
-		{
-
-			temp=string[i];
-
-			string[i]=string[i+1];
-
-			string[i+1]=temp;
-
-		}
-
-		puts(string);
-
-	}
-
-	else
-
-	{
-
-		for(i=0;i<n-1;i+=2)
-
-		{
-
-			temp=string[i];
-
-			string[i]=string[i+1];
-
-			string[i+1]=temp;
-
-		}
-
-		puts(string);
-
-		
-
-	}
-
-
-
-
-
-return 0;
-
+char s1[20],s2[10];
+printf("enter a string");
+scanf("%s",&s1);
+int i,j;
+i=0;
+if(i%2==0)
+{
+temp=s1[i];
+s2[i]=s1[i+2];
+s1[i+2]=temp;
+i++;
+printf("%s",s1[i+2]);
+}
+else
+{
+temp=s1[i];
+s2[i]=s1[i+1];
+s1[i+1]=temp;
+printf("%s",s1[i+2]);
+i++;
+}
 }
