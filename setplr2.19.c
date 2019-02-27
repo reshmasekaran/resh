@@ -4,14 +4,14 @@ int main(void)
 {
 	int num,i,j,flag=1;
 	scanf("%d",&num);
-	for(j=2;j<=num;j++)
+	for(s=2;s<=num;s++)
 	{
-		if(num%j==0)
+		if(num%s==0)
 		{
 			flag=1;
-			for(i=2;i<=j/2;i++)
+			for(i=2;i<=s/2;i++)
 			{
-			if(j%i==0)
+			if(s%i==0)
 			{
 			flag=0;
 			break;
@@ -21,7 +21,7 @@ int main(void)
 	
 	if(flag==1)
 	{
-		printf("%d ",j);
+		printf("%d ",s);
 	}
 		}
 	}
